@@ -4,7 +4,7 @@
   "description": "Pacchaser server to take player inputs",
   "main": "main.js",
   "scripts": {
-    "test": "test"
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
