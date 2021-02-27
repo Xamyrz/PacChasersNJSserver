@@ -38,5 +38,5 @@ socket.on('connection',function(client){
             console.log("pdown");
     })
 });
-socket.listen(2731)
+socket.listen(process.env.PORT || 2731, () => console.log(`Server is listening on port ${process.env.PORT}...`))
 console.log(`pacChaser server running`);
