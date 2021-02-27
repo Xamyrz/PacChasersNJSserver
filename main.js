@@ -1,8 +1,5 @@
 var socket = require('socket.io')();
-var users = {
-    desktop : {},
-    android : {}
-}
+
 socket.on('connection',function(client){
     console.log(`new connection ! ${client.id}`);
     client.on("ghright",(x, y, velX, velY, turning, cid)=>{
@@ -36,6 +33,14 @@ socket.on('connection',function(client){
     client.on("pdown",(x, y, velX, velY, turning, cid)=>{
             client.broadcast.emit("pdown",x, y, velX, velY, turning, client.id);
             console.log("pdown");
+    })
+    client.on("pacwin",(data)=>{
+        client.broadcast.emit("pacwin");
+        console.log("pacwin");
+    })
+    client.on("ghwin",(data)=>{
+        client.broadcast.emit("ghwin");
+        console.log("ghwin");
     })
 });
 socket.listen(process.env.PORT || 2731)
