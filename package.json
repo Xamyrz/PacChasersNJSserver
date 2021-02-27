@@ -1,0 +1,21 @@
+{
+  "name": "pacchaserserver",
+  "version": "1.0.0",
+  "description": "Pacchaser server to take player inputs",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "null"
+  ],
+  "author": "Xamyr",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "^3.1.2"
+  }
+}
