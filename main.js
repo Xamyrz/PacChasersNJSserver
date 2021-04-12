@@ -1,5 +1,4 @@
 //Kamil Michalski
-//18469806
 var socket = require('socket.io')();
 
 socket.on('connection',function(client){
