@@ -1,3 +1,6 @@
+//Kamil Michalski
+//18469806
+//server hosted on heroku https://pacchaser-server.herokuapp.com
 var socket = require('socket.io')();
 
 socket.on('connection',function(client){
